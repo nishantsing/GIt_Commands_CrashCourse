@@ -69,6 +69,8 @@ HEAD - refers to last commit on master branch(last commit of any branch)
 - git stash drop stash@{2}
 - git stash clear// clears the stash completely
 
+## Undoing changes and Time Traveling
+
 ## .gitignore
 - To ignoring files.
 

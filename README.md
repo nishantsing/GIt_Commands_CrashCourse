@@ -39,7 +39,35 @@ HEAD - refers to last commit on master branch(last commit of any branch)
 - git branch -d  <branch-name> // cannot delete the branch you switched in
 - git branch -m <branch-name>// you need to be switched in the branch you want to rename
 
-- 
+## Merging
+
+- Fast Forward merge (The receiving branch is the branch from which other branch was created and receiving branch dont have any new commits after creating other branch)
+  - Switch to the branch you want to merge the changes into (the receivng branch)
+  - Use the git merge <branch-name> command to merge changes from a specific branch into the current branch.
+
+- If the receiving branch(master) already has commit ahead of the branch created from the master, then its not a fast forward merge and new merge commit is created. If the commit that is ahead of the other branch in master is conflicting then we will get merge conflict.\
+- deletion of same file, or changing of same lines in same file.
+ 
+## Git Diff
+
+- gives you change from last commit and new changes that are not commited.
+
+- git diff //list changes in the working director that are not staged(unstaged).
+- git diff HEAD // list all changes(staged+unstaged) in the working directory since last commit
+  - git diff HEAD [filename.ext] [filename2.ext] ...
+- git diff --staged || git diff --cached // diff between last commit and staging area
+  - git diff --staged [filename.ext] ...
+- git diff branch1 branch2 || git diff branch1..branch2 // comparing changes between 2 branches.
+- git dif commit1 commit2 || git diff commit1..commit2 // comparing changes between 2 commits.
+
+## Stashing
+- git stash || git stash save// uncommitted chagnes(staged+unstagd)
+- git stash pop
+- git stash apply //apply but also keep it in stash as well without poping from stash.
+  - git stash apply stash@{2}
+- git stash list // list the stashes
+- git stash drop stash@{2}
+- git stash clear// clears the stash completely
 
 ## .gitignore
 - To ignoring files.

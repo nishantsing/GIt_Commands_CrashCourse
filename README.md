@@ -82,7 +82,7 @@ HEAD normally points to the branch pointer that points to last commit
 
 - After moving back to some commit you can create a branch from that commit and do things differently if you like.
  
-- git checkout HEAD~1 // referencing previous commits relative to a particular commit. HEAD~1 previous commit
+- git checkout HEAD~1 //referencing previous commits relative to a particular commit. 
 
 - git checkout HEAD <filename.ext> <file2> ..|| git checkout -- <filename.ext> // undo the new changes made to that file and revert back to the HEAD
 - git restore <file1>// does the same thing of reverting back to HEAD as default source

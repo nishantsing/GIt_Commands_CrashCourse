@@ -277,3 +277,6 @@ HEAD file -> current head
     - author
     - commiter
     - message
+
+![Git internal structure](./"Git internal.JPG")
+

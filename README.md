@@ -278,5 +278,5 @@ HEAD file -> current head
     - commiter
     - message
 
-![Git internal structure](./Git internal.JPG)
+![Git internal structure](./Git%20internal.JPG)
 

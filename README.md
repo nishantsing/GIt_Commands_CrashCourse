@@ -273,7 +273,7 @@ HEAD file -> current head
   - blobs are object type Git uses to store the contents of files in given repo. They just store content of the file, not even the filename.
   - commits combine a tree object along with information about the context that led to the current tree. Commits store a reference to parent commit(s), the author, the commiter and commit message
     - tree
-    - parent
+    - parent // points to previous commit
     - author
     - commiter
     - message
